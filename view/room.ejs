@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ECOURSES - Online Courses HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5 screen-div" >
+            <div class="col-md-12 main-screen">
+                <div class="col-md-2 screen-btn">
+                        <button id="shareButton" class=""><i class="fas fa-share-alt"></i></button>
+                        <button id="hideMeButton" class=""><i id="hideMeIcon" class="fas fa-user"></i></button>
+                        <button id="startVideoButton" class="" style="color: red;"><i class="fas fa-video-slash"></i></button>
+                        <button id="stopVideoButton" class="hidden"><i class="fas fa-video"></i></button>
+                        <button id="startAudioButton" class="" style="color: red;"><i class="fas fa-microphone-slash"></i></button>
+                        <button id="stopAudioButton" class="hidden"><i class="fas fa-microphone"></i></button>
+                        <button id="startScreenButton" class=""><i class="fas fa-desktop"></i></button>
+                        <button id="stopScreenButton" class="hidden"><i class="fas fa-stop-circle"></i></button>
+                        <button id="chatButton" class=""><i class="fas fa-comments"></i></button>
+                        <button id="participantsButton" class=""><i class="fas fa-users"></i></button>
+                        <button id="whiteboardButton" class=""><i class="fas fa-chalkboard-teacher"></i></button>
+                        <button id="settingsButton" class=""><i class="fas fa-cogs"></i></button>
+                        <button id="aboutButton" class=""><i class="fas fa-question"></i></button>
+                        <button id="exitButton" class=""><i class="fas fa-sign-out-alt" style="color: red;"></i></button>
+                    </ul>
+                </div>
+                <div class="col-md-10 streaming-screen">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Carousel End -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $("#startVideoButton").click(function(){
+            $("#stopVideoButton").show();
+            $("#startVideoButton").hide();
+        })
+        $("#stopVideoButton").click(function(){
+            $("#startVideoButton").show();
+            $("#stopVideoButton").hide();
+        })
+
+        $("#startAudioButton").click(function(){
+            $("#stopAudioButton").show();
+            $("#startAudioButton").hide();
+        })
+        $("#stopAudioButton").click(function(){
+            $("#startAudioButton").show();
+            $("#stopAudioButton").hide();
+        })
+    </script>
+</body>
+
+</html>
